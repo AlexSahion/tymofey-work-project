@@ -1,0 +1,52 @@
+
+//ICONS//..............................
+@font-face {
+    font-family: icons;
+    font-display: swap;
+    src: url("../fonts/icon.woff2") format("woff2"), url("../font/icons.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+//LATO//..............................
+@font-face {
+	font-family: Lato;
+	font-display: swap;
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	font-display: swap;
+	src: url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	font-display: swap;
+	src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Lato;
+	font-display: swap;
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+//WIDE//..............................
+
+@font-face {
+	font-family: Wide;
+	font-display: swap;
+	src: url("../fonts/hkgroteskwide-semibold.woff2") format("woff2"), url("../fonts/hkgroteskwide-semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}

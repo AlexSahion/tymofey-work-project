@@ -1,0 +1,23 @@
+body{
+    font-family: $fontFamily;
+    position: relative;
+    &.lock{
+        overflow: hidden;
+    }
+}
+[class*="__container"]{
+    max-width: $containerWidth + $mainOffset*2;
+    padding: 0 $mainOffset;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+.text{
+	font-size: 40px;
+}

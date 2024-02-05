@@ -1,0 +1,16 @@
+@use "sass:math";
+//Fonts.................................................
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+//Config...................................................
+@import "config/fonts";
+@import "config/icons";
+@import "config/functions";
+@import "config/vars";
+@import "config/reset";
+@import "config/base";
+//Layout...................................................
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
