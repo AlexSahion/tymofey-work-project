@@ -1,6 +1,7 @@
 body{
     font-family: $fontFamily;
     position: relative;
+	 background: rgb(242, 254, 255);
     &.lock{
         overflow: hidden;
     }
