@@ -503,7 +503,11 @@ body.lock {
        column-gap: 13px;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+}
+@media (max-width: 998px) {
+  .left-main__support {
+    justify-content: center;
+  }
 }
 .left-main__text {
   color: rgb(41, 41, 41);
