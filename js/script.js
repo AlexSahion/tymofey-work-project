@@ -8,6 +8,16 @@
 //     menuBody.classList.toggle("_active")
 //   })
 // }
+new Swiper('.main-slider__container', {
+	navigation: {
+		prevEl: '.main-slider__prev',
+		nextEl: '.main-slider__next',
+	},
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	loop: true,
+	speed: 600,
+});
 const body = document.body
 
 //BURGER........................................................
