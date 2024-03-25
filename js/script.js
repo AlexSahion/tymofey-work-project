@@ -8,16 +8,6 @@
 //     menuBody.classList.toggle("_active")
 //   })
 // }
-new Swiper('.main-slider__container', {
-	navigation: {
-		prevEl: '.main-slider__prev',
-		nextEl: '.main-slider__next',
-	},
-	slidesPerView: 'auto',
-	centeredSlides: true,
-	loop: true,
-	speed: 600,
-});
 const body = document.body
 
 //BURGER........................................................
@@ -29,4 +19,18 @@ burger.addEventListener('click', e => {
 	body.classList.toggle('lock')
 	menu.classList.toggle('_active')
 })
+
+//SWIPER........................................................
+new Swiper('.main-slider__container', {
+	navigation: {
+		prevEl: '.main-slider__prev',
+		nextEl: '.main-slider__next',
+	},
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	loop: true,
+	speed: 600,
+});
+
+
 
