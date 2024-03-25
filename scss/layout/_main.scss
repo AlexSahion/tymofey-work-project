@@ -493,6 +493,13 @@
 			background: #fff;
 			backdrop-filter: blur(0px);
 			transition: $defaultTrans;
+			.main-slider__num{
+				background-color:rgb(14, 14, 14);
+				span{
+					color: rgb(247, 247, 247);
+				}
+				
+			}
 		}
 	}
 
@@ -512,14 +519,15 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: rgb(14, 14, 14);
+		background-color: #fff;
 		border-radius: 150px;
+		transition: $defaultTrans;
 		span{
 			font-size: 18px;
 			font-family: Lato;
 			font-weight: 600;
 			line-height: 22px;
-			color: rgb(247, 247, 247);
+			color: #000;
 			padding: 8px 20px 8px 20px;
 		}
 		@media (max-width:748px) {
@@ -618,3 +626,68 @@
 	}
 }
 
+//INFINITE////////////////////////////////////////////////////////////////////
+
+.infinite {
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		row-gap: 30px;
+		align-items: center;
+		padding-top: 168px;
+		@media (max-width:992px) {
+			padding-top: 100px;
+		}
+		@media (max-width:584px) {
+			flex-direction: column-reverse;
+			row-gap: 20px;
+			padding-top: 80px;
+		}
+	}
+
+	&__img {
+	
+		flex: 0 1 40%;
+		img{
+			min-width: 100%;
+		}
+		
+	}
+
+	&__content {
+		max-width: 600px;
+	}
+
+	&__title {
+		color: rgb(0, 0, 0);
+		font-family: Poppins;
+		font-size: 54px;
+		font-weight: 600;
+		line-height: 140%;
+		text-transform: capitalize;
+		@media (max-width:735px) {
+			font-size: 40px;
+		}
+		@media (max-width:584px) {
+			text-align: center;
+		}
+	}
+
+	&__text {
+		color: rgb(0, 0, 0);
+		font-family: Lato;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 130%;
+		text-transform: capitalize;
+		margin-top: 50px;
+		@media (max-width:735px) {
+			font-size: 15px;
+			margin-top: 25px;
+		}
+		@media (max-width:584px) {
+			text-align: center;
+		}
+	}
+}
