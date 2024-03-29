@@ -1149,3 +1149,104 @@
 		}
 	}
 }
+
+
+
+//TEAM////////////////////////////////////////////////////////////////////
+
+
+.team {
+
+	&__container {
+		padding-top: 200px;
+		@media (max-width:992px) {
+			padding-top: 100px;
+		}
+		@media (max-width:584px) {
+			padding-top: 80px;
+		}
+	}
+
+	&__title {
+		color: rgb(0, 0, 0);
+		font-family: Poppins;
+		font-size: 54px;
+		font-weight: 600;
+		line-height: 140%;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+		@media (max-width:735px) {
+			font-size: 40px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width:532px) {
+			flex-direction: column;
+			row-gap: 40px;
+		}
+	}
+
+	&__item {
+		flex: 0 1 30%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 16px;
+		@media (max-width:532px) {
+			flex-direction: row;
+			justify-content: center;
+			column-gap: 20px;
+		}
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 16px;
+	}
+
+	&__icon {
+		img{
+			max-width: 100%;
+		}
+		@media (max-width:773px) {
+			max-width: 100px;
+		}
+	}
+
+	&__prof {
+		color: rgb(0, 0, 0);
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 10px;
+		text-transform: uppercase;
+	}
+
+	&__name {
+		font-family: Lato;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 12px;
+		text-transform: capitalize;
+	}
+
+	&__social {
+		display: flex;
+		column-gap: 30px;
+		margin-top: 10px;
+	}
+
+	&__in {
+		font-size: 18px;
+	}
+
+	&__twitter {
+		font-size: 18px;
+	}
+}
