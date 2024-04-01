@@ -1160,6 +1160,7 @@
 	&__container {
 		padding-top: 200px;
 		position: relative;
+		z-index: 10;
 		@media (max-width:992px) {
 			padding-top: 100px;
 		}
@@ -1196,6 +1197,8 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		position: relative;
+		z-index: 10;
 		@media (max-width:532px) {
 			flex-direction: column;
 			row-gap: 40px;
