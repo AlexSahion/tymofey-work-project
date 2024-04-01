@@ -1514,6 +1514,7 @@ body.lock {
 .team__container {
   padding-top: 200px;
   position: relative;
+  z-index: 10;
 }
 @media (max-width: 992px) {
   .team__container {
@@ -1553,6 +1554,8 @@ body.lock {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
 }
 @media (max-width: 532px) {
   .team__items {
@@ -1703,4 +1706,95 @@ body.lock {
 .explore__button:hover {
   background: #000;
   color: #fff;
+}
+
+.footer {
+  background: rgb(218, 225, 241);
+}
+.top-footer {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.top-footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 530px) {
+  .top-footer__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .top-footer__container {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: left;
+  }
+}
+.top-footer__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.top-footer__social {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.top-footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+}
+.top-footer__text {
+  max-width: 270px;
+}
+
+.bottom-footer__content {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media (max-width: 400px) {
+  .bottom-footer__content {
+    justify-content: center;
+  }
+}
+.bottom-footer__year {
+  color: rgb(95, 95, 95);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+}
+@media (max-width: 530px) {
+  .bottom-footer__year {
+    font-size: 15px;
+  }
+}
+.bottom-footer__logo {
+  min-width: 60px;
+}
+.bottom-footer__logo img {
+  min-width: 100%;
+}
+@media (max-width: 530px) {
+  .bottom-footer__logo {
+    max-width: 40px;
+  }
 }
