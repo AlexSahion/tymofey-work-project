@@ -32,5 +32,17 @@ new Swiper('.main-slider__container', {
 	speed: 600,
 });
 
+new Swiper('.part__container', {
+	navigation: {
+		prevEl: '.part__prev',
+		nextEl: '.part__next',
+	},
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	loop: true,
+	speed: 600,
+});
+
+
 
 
