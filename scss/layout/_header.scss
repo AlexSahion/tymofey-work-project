@@ -30,20 +30,22 @@
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
 		&::before{
 			content: '';
 			background-color: #000;
-			width: 0%;
+			width: 100%;
 			height: 100%;
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -100%;
 			transition: $defaultTrans;
 			border-radius: 12px;
 		}
 		&:hover{
 			&::before{
-				width: 100%;
+				left: 0;
 			}
 		}
 	}
@@ -82,7 +84,7 @@
 			height: 20px;
 			width: 30px;
 			position: relative;
-			z-index: 100;
+			z-index: 600;
 			
 			
 			span{
@@ -140,11 +142,11 @@
 		height: 100%;
 		position: fixed;
 		left: 0;
-		background-color: #00000080;
+		background-color: #00000090;
 		overflow: auto;
 		padding-bottom: 30px;
 		transition: $defaultTrans;
-		z-index: 100;
+		z-index: 500;
 		&._active{
 			opacity: 1;
 			top: 0;

@@ -49,6 +49,16 @@
 			border-radius: 50%;
 			background-color: rgb(255, 255, 255);
 			padding: 8px;
+			transition: $defaultTrans;
+			&::before{
+				transition: $defaultTrans;
+			}
+			&:hover{
+				background-color: #000;
+				&::before{
+					color: #fff;
+				}
+			}
 		}
 	}
 
