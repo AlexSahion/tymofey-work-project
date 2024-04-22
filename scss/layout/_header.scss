@@ -32,6 +32,7 @@
 		position: relative;
 		overflow: hidden;
 		border-radius: 12px;
+		transition: $defaultTrans;
 		&::before{
 			content: '';
 			background-color: #000;
@@ -47,6 +48,9 @@
 			&::before{
 				left: 0;
 			}
+		}
+		&:active{
+			transform: translate(0, 3px);
 		}
 	}
 
@@ -73,6 +77,7 @@
 			color: #fff;
 			background: inherit;
 		}
+		
 		
 	}
 	&__icon{
@@ -169,6 +174,7 @@
 	&__item {
 		text-transform: capitalize;
 		position: relative;
+		transition: $defaultTrans;
 		&:after{
 			content: '';
 			background-color: #000;
@@ -183,6 +189,9 @@
 			&::after{
 				width: 100%;
 			}
+		}
+		&:active{
+			transform: translate(0, 3px);
 		}
 	}
 

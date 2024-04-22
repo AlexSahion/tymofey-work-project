@@ -115,6 +115,10 @@
 		display: flex;
 		align-items: center;
 		column-gap: 10px;
+		transition: $defaultTrans;
+		&:active{
+			transform: translate(0, 3px);
+		}
 		svg{
 			path{
 				transition: $defaultTrans;
@@ -330,6 +334,9 @@
 			background: rgb(23, 23, 23);
 			color: rgb(255, 255, 255);
 		}
+		&:active{
+			transform: translate(0, 3px);
+		}
 	}
 
 	&__more {
@@ -350,6 +357,9 @@
 			background: rgb(23, 23, 23);
 			color: rgb(255, 255, 255);
 		}
+		&:active{
+			transform: translate(0, 3px);
+		}
 	}
 
 	&__google {
@@ -364,6 +374,9 @@
 		&:hover{
 			background: rgb(23, 23, 23);
 			color: rgb(255, 255, 255);
+		}
+		&:active{
+			transform: translate(0, 3px);
 		}
 	}
 
@@ -468,6 +481,10 @@
 			&::before{
 				left: 0;
 			}
+		}
+		transition: $defaultTrans;
+		&:active{
+			transform: translate(0, 3px);
 		}
 		a{
 			font-size: 20px;
@@ -838,6 +855,7 @@
 	}
 }
 .item-interact {
+	transition: $defaultTrans;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
@@ -888,6 +906,27 @@
 	}
 
 	&__day {
+		position: relative;
+		&._active{
+			.item-interact__menu{
+				opacity: 1;
+				top: 40px;
+				visibility: visible;
+			}
+		}
+		
+	}
+	&__menu{
+		position: absolute;
+		top: 0px;
+		left: -10px;
+		border: 1px solid #000;
+		border-radius: 15px;
+		padding: 15px;
+		background-color: #fff;
+		opacity: 0;
+		transition: $defaultTrans;
+		visibility: hidden;
 	}
 }
 
@@ -915,9 +954,15 @@
 		color: rgb(20, 20, 20);
 	}
 }
-.item-interact-wallet {
+.item-interact-wallet{
+	opacity: 0;
+	visibility: hidden;
+}
+.item-interact-wallet._active {
 	background: rgb(164, 247, 232);
 	grid-area: wallet;
+	opacity: 1;
+	visibility: visible;
 	.item-interact__title{
 		color: rgb(20, 20, 20);
 	}
@@ -957,6 +1002,12 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			transform: rotate(90deg);
+			transition: $defaultTrans;
+		}
+		&._active{
+			&::after{
+				transform: rotate(-90deg);
+			}
 		}
 	}
 	.item-interact__price{
@@ -1207,9 +1258,12 @@
 
 	&__link {
 		margin-top: 26px;
+		display: flex;
+		gap: 10px;
 		a{
 			display: flex;
 			align-items: center;
+			position: relative;
 			column-gap: 20px;
 			color: rgb(51, 51, 51);
 			font-family: Lato;
@@ -1217,14 +1271,24 @@
 			font-weight: 500;
 			line-height: 10px;
 			text-transform: lowercase;
-			&:hover{
-				text-decoration: underline;
+			transition: $defaultTrans;
+			&::after{
+				content: '';
+				background: #000;
+				width: 0%;
+				height: 1px;
+				position: absolute;
+				bottom: -3px;
+				left: 0px;
+				transition: $defaultTrans;
 			}
-			._icon-in{
-				&:hover{
-					text-decoration: none;
+			&:hover{
+				&::after{
+					width: 100%;
 				}
-				text-decoration: none;
+			}
+			&:active{
+				transform: translate(0, 2px);
 			}
 		}
 	}
@@ -1424,6 +1488,9 @@
 			background: #000;
 			color: #fff;
 		}
+		&:active{
+			transform: translate(0, 3px);
+		}
 	}
 }
 //SUBSCRIBE////////////////////////////////////////////////////////////////////
@@ -1524,17 +1591,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 1px solid rgb(0, 0, 0);
 		border-radius: 24px;
-		background: rgb(0, 0, 0);
-		color: #fff;
-		color: rgb(255, 255, 255);
+		background: rgb(255, 255, 255);
+		color: #000;
 		font-family: Lato;
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 48px;
 		text-transform: capitalize;
 		padding: 0 50px;
+		transition: $defaultTrans;
 		@media (max-width:750px) {
 			font-size: 30px;
 			padding: 0 30px;
@@ -1545,6 +1611,13 @@
 		@media (max-width:382px) {
 			font-size: 25px;
 			flex: 0 1 100%;
+		}
+		&:hover{
+			background: #000;
+			color: #fff;
+		}
+		&:active{
+			transform: translate(0, 3px);
 		}
 	}
 }
@@ -1753,7 +1826,11 @@
 	&__prev {
 		max-width: 20px;
 		img{
+			transition: $defaultTrans;
 			max-width: 100%;
+			&:hover{
+				transform: scale(1.2);
+			}
 		}
 		transform: rotate(90deg);
 	}
@@ -1761,7 +1838,11 @@
 	&__next {
 		max-width: 20px;
 		img{
+			transition: $defaultTrans;
 			max-width: 100%;
+			&:hover{
+				transform: scale(1.2);
+			}
 		}
 		transform: rotate(-90deg);
 	}
