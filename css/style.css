@@ -640,6 +640,9 @@ body.lock {
   width: 100%;
   z-index: 5;
 }
+.right-main__phone._active {
+  z-index: 0;
+}
 @media (max-width: 998px) {
   .right-main__phone {
     flex: 0 0 316px;
@@ -1749,18 +1752,39 @@ body.lock {
   font-weight: 700;
   line-height: 12px;
   text-transform: capitalize;
+  color: #000;
+  position: relative;
+}
+.team__name::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  transition: all 300ms ease-in-out;
+}
+.team__name:hover::after {
+  width: 100%;
 }
 .team__social {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
-.team__in {
-  font-size: 18px;
+.team__icon {
+  font-size: 20px;
 }
-.team__twitter {
-  font-size: 18px;
+.team__icon::before {
+  padding: 8px;
+  transition: all 300ms ease-in-out;
+  border-radius: 50%;
+}
+.team__icon:hover::before {
+  color: #fff;
+  background-color: #000;
 }
 
 .explore__container {

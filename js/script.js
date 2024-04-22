@@ -10,14 +10,29 @@
 // }
 const body = document.body
 
+
+//ДЕЛЕГИРОВАНИЕ........................................................
+body.addEventListener('click', e => {
+	if (e.target.closest('.item-interact__day')) {
+		const element = e.target.closest('.item-interact__day');
+		element.classList.toggle('_active')
+	}
+	if (!e.target.closest('.item-interact__day')) {
+
+	}
+})
+
+
 //BURGER........................................................
 const burger = document.querySelector('.header__icon')
 const menu = document.querySelector('.header__menu')
-console.log(burger);
+const phone = document.querySelector('.right-main__phone')
+console.log(phone);
 burger.addEventListener('click', e => {
 	burger.classList.toggle('_active')
 	body.classList.toggle('lock')
 	menu.classList.toggle('_active')
+	phone.classList.toggle('_active')
 })
 
 //SWIPER........................................................
@@ -42,7 +57,5 @@ new Swiper('.part__container', {
 	loop: true,
 	speed: 600,
 });
-
-
 
 
