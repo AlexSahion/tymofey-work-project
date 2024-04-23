@@ -25,21 +25,21 @@
 @font-face {
   font-family: Lato;
   font-display: swap;
-  src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
+  src: url("../fonts/Lato-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: Lato;
   font-display: swap;
-  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  src: url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Wide;
   font-display: swap;
-  src: url("../fonts/hkgroteskwide-semibold.woff2") format("woff2"), url("../fonts/hkgroteskwide-semibold.woff") format("woff");
+  src: url("../fonts/hkgroteskwide-semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -430,6 +430,7 @@ body.lock {
     row-gap: 50px;
   }
 }
+
 @media (max-width: 998px) {
   .left-main {
     display: flex;
@@ -632,7 +633,7 @@ body.lock {
   position: absolute;
 }
 .right-main__phone {
-  background: url("../../img/main__page/tel.svg");
+  background: url("../../img/main-page/tel.svg");
   background-size: no-repeat;
   border-radius: 50px;
   position: relative;
@@ -1231,6 +1232,7 @@ body.lock {
     grid-template-areas: "map" "privacy" "wallet" "dashboard";
   }
 }
+
 .item-interact {
   transition: all 300ms ease-in-out;
   border-radius: 20px;
@@ -1289,7 +1291,7 @@ body.lock {
 }
 
 .item-interact-map {
-  background: url("../img/Interact/map.jpeg");
+  background: url("../img/interact/map.jpeg");
   background-size: cover;
   grid-area: map;
 }
@@ -1361,7 +1363,7 @@ body.lock {
   width: 7px;
   height: 13px;
   display: block;
-  background: url("../img/main__slider/row-right.png");
+  background: url("../img/main-slider/row-right.png");
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(90deg);
@@ -1794,7 +1796,7 @@ body.lock {
   justify-content: center;
   flex-direction: column;
   row-gap: 64px;
-  background: url(../img/Explore/bg.png) no-repeat;
+  background: url(../img/explore/bg.png) no-repeat;
   background-size: contain;
   background-position: center;
   padding-top: 170px;
@@ -2512,6 +2514,7 @@ body.lock {
 .footer {
   background: rgb(218, 225, 241);
 }
+
 .top-footer {
   border-bottom: 1px solid rgb(255, 255, 255);
 }

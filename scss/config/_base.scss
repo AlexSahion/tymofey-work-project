@@ -1,5 +1,5 @@
 body{
-    font-family: $fontFamily;
+    font-family: $font-family;
     position: relative;
 	 background: rgb(242, 254, 255);
     &.lock{
@@ -7,8 +7,8 @@ body{
     }
 }
 [class*="__container"]{
-    max-width: $containerWidth + $mainOffset*2;
-    padding: 0 $mainOffset;
+    max-width: $container-width + $main-offset*2;
+    padding: 0 $main-offset;
     margin: 0 auto;
 }
 .wrapper{

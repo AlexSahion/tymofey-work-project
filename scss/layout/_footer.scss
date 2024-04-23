@@ -1,11 +1,7 @@
 .footer {
 	background: rgb(218, 225, 241);
-	&__top {
-	}
-
-	&__bottom {
-	}
 }
+
 .top-footer {
 	border-bottom: 1px solid rgb(255, 255, 255);
 	&__container {
@@ -32,9 +28,6 @@
 		row-gap: 20px;
 	}
 
-	&__logo {
-	}
-
 	&__social {
 		display: flex;
 		column-gap: 18px;
@@ -49,9 +42,9 @@
 			border-radius: 50%;
 			background-color: rgb(255, 255, 255);
 			padding: 8px;
-			transition: $defaultTrans;
+			transition: $default-trans;
 			&::before{
-				transition: $defaultTrans;
+				transition: $default-trans;
 			}
 			&:hover{
 				background-color: #000;
@@ -69,9 +62,6 @@
 }
 
 .bottom-footer {
-
-	&__container {
-	}
 
 	&__content {
 		display: flex;

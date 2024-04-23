@@ -20,19 +20,13 @@
 		column-gap: 20px;
 	}
 
-	&__logo {
-	}
-
-	&__menu {
-	}
-
 	&__more {
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
 		overflow: hidden;
 		border-radius: 12px;
-		transition: $defaultTrans;
+		transition: $default-trans;
 		&::before{
 			content: '';
 			background-color: #000;
@@ -41,7 +35,7 @@
 			position: absolute;
 			top: 0;
 			left: -100%;
-			transition: $defaultTrans;
+			transition: $default-trans;
 			border-radius: 12px;
 		}
 		&:hover{
@@ -64,7 +58,7 @@
 		padding: 16px 44px;
 		border-radius: 12px;
 		overflow: hidden;
-		transition: $defaultTrans;
+		transition: $default-trans;
 		@media (max-width: 490px) {
 			padding: 12px 30px;
 			font-size: 16px;
@@ -150,7 +144,7 @@
 		background-color: #00000090;
 		overflow: auto;
 		padding-bottom: 30px;
-		transition: $defaultTrans;
+		transition: $default-trans;
 		z-index: 500;
 		&._active{
 			opacity: 1;
@@ -174,7 +168,7 @@
 	&__item {
 		text-transform: capitalize;
 		position: relative;
-		transition: $defaultTrans;
+		transition: $default-trans;
 		&:after{
 			content: '';
 			background-color: #000;
@@ -183,7 +177,7 @@
 			bottom: -3px;
 			position: absolute;
 			left: 0;
-			transition: $defaultTrans;
+			transition: $default-trans;
 		}
 		&:hover{
 			&::after{

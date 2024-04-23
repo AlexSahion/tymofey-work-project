@@ -11,6 +11,16 @@
 @import "config/base";
 //Layout...................................................
 @import "layout/header";
-@import "layout/main";
+@import "layout/blocks/main";
+@import "layout/blocks/main-slider";
+@import "layout/blocks/infinite";
+@import "layout/blocks/interact";
+@import "layout/blocks/companies";
+@import "layout/blocks/advisors";
+@import "layout/blocks/team";
+@import "layout/blocks/explore";
+@import "layout/blocks/subscribe";
+@import "layout/blocks/part";
+@import "layout/blocks/roadmap";
 @import "layout/footer";
 
