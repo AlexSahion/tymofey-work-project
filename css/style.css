@@ -1796,7 +1796,7 @@ body.lock {
   justify-content: center;
   flex-direction: column;
   row-gap: 64px;
-  background: url(../img/explore/bg.png) no-repeat;
+  background: url("../img/explore/bg.png") no-repeat;
   background-size: contain;
   background-position: center;
   padding-top: 170px;
