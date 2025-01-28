@@ -1,19 +1,42 @@
 body{
-    font-family: $font-family;
-    position: relative;
-	 background: rgb(242, 254, 255);
-    &.lock{
-        overflow: hidden;
-    }
+   font-family: $font-family;
+   position: relative;
+
+   &.lock{
+      overflow: hidden;
+   }
 }
+
 [class*="__container"]{
-    max-width: $container-width + $main-offset*2;
-    padding: 0 $main-offset;
-    margin: 0 auto;
+   max-width: $container-width + $main-offset*2;
+   padding: 0 $main-offset;
+   margin: 0 auto;
 }
+
 .wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+	justify-content: space-between;
+   min-height: 100%;
+	overflow: hidden;
+	background-color: #181818;
+}
+
+.logo{
+	a{
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 29px;
+	}
+}
+
+.text{
+	color: $gray-color;
+	font-weight: 300;
+	line-height: 28px;
+
+	@media (max-width: 500px) {
+		font-size: 15px;
+	}
 }
