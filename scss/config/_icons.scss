@@ -14,3 +14,26 @@
     display: block;
   }
 }
+
+._icon-arrow:before {
+	content: "\e900";
+ }
+ ._icon-facebook:before {
+	content: "\e901";
+ }
+ ._icon-inst:before {
+	content: "\e902";
+ }
+ ._icon-star:before {
+	content: "\e903";
+ }
+ ._icon-twiter:before {
+	content: "\e904";
+ }
+ ._icon-youtube:before {
+	content: "\e905";
+ }
+ ._icon-arrow-small:before {
+	content: "\ea50";
+ }
+ 
