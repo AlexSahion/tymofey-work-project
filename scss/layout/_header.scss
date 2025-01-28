@@ -1,0 +1,34 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	z-index: 3;
+	
+	&__container {
+		min-height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 15px;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		column-gap: 45px;
+		row-gap: 15px;
+		flex-wrap: wrap;
+		@include adaptive-value('column-gap', 45, 15);
+	}
+
+	&__link {
+		font-family: Montserrat;
+		transition: $default-trans;
+
+		&:hover{
+			color: $purple-color;
+		}
+	}
+}
