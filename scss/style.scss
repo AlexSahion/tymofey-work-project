@@ -1,6 +1,8 @@
 @use "sass:math";
 //Fonts.................................................
-
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular");
+@import url("https://fonts.googleapis.com/css?family=Manrope:200,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700");
 //Config...................................................
 @import "config/fonts";
 @import "config/icons";
@@ -11,5 +13,6 @@
 @import "config/base";
 //Layout...................................................
 @import "layout/header";
+@import 'layout/blocks/promo';
 @import "layout/footer";
 
