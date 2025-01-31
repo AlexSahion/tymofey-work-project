@@ -226,7 +226,7 @@ body.lock {
 }
 
 .promo {
-  background: url("../../img/main-bg.png");
+  background: url("../img/main-bg.png");
   position: relative;
 }
 .promo::before {
