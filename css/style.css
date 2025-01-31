@@ -154,6 +154,28 @@ body.lock {
   line-height: 29px;
 }
 
+.title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 122%;
+  text-transform: capitalize;
+}
+.title span {
+  color: #AE76FF;
+  font-size: inherit;
+}
+@media (max-width: 880px) {
+  .title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 470px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
 .text {
   color: #D3D3D3;
   font-weight: 300;
@@ -258,6 +280,107 @@ body.lock {
 .promo__button a:hover {
   color: #fff;
   background-color: #AE76FF;
+}
+
+.info__container {
+  padding-top: 120px;
+}
+@media (max-width: 1350px) {
+  .info__container {
+    padding-top: calc(40px + 80 * (100vw - 320px) / 1030);
+  }
+}
+.info__items {
+  margin-top: 40px;
+  row-gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+@media (max-width: 1350px) {
+  .info__items {
+    margin-top: calc(20px + 20 * (100vw - 320px) / 1030);
+  }
+}
+@media (max-width: 1350px) {
+  .info__items {
+    row-gap: calc(20px + 20 * (100vw - 320px) / 1030);
+  }
+}
+.info__item {
+  padding: 20px;
+  flex: 0 1 48%;
+  border: 1px solid #AE76FF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: auto 0fr;
+  row-gap: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+.info__item:hover {
+  background-color: #AE76FF;
+}
+.info__item:hover .info__icon::before {
+  color: #fff;
+}
+.info__item:hover .info__question {
+  color: #fff;
+}
+@media (max-width: 640px) {
+  .info__item {
+    flex: 0 1 100%;
+  }
+}
+.info__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.info__question {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #AE76FF;
+  transition: all 300ms ease-in-out;
+}
+.info__icon::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-180deg) translate(0, 8px);
+  color: #AE76FF;
+  font-size: 35px;
+  transition: all 300ms ease-in-out;
+}
+.info__text {
+  font-size: 18px;
+  line-height: 140%;
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .info__text {
+    font-size: 16px;
+  }
+}
+
+.active {
+  grid-template-rows: auto 1fr;
+  row-gap: 12px;
+}
+
+.info__item.active {
+  background-color: #AE76FF;
+}
+.info__item.active .info__icon::before {
+  transform: rotate(0deg);
+  color: #fff;
+}
+.info__item.active .info__question {
+  color: #fff;
 }
 
 .footer {
