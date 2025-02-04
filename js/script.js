@@ -16,3 +16,10 @@ document.addEventListener('click', e => {
 		accordionElement.classList.add('active')
 	}
 })
+
+const swiper = new Swiper('.promo__swiper', {
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 20,
+	centeredSlides: true,
+})
