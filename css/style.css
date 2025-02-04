@@ -245,6 +245,11 @@ body.lock {
   max-width: 800px;
   padding: 140px 20px;
 }
+@media (max-width: 667px) {
+  .promo__container {
+    padding: 140px 0px;
+  }
+}
 .promo__content {
   text-align: center;
 }
@@ -261,9 +266,19 @@ body.lock {
     font-size: 35px;
   }
 }
+@media (max-width: 667px) {
+  .promo__title {
+    padding: 0px 20px;
+  }
+}
 @media (max-width: 500px) {
   .promo__title {
     font-size: 28px;
+  }
+}
+@media (max-width: 667px) {
+  .promo__text {
+    padding: 0px 20px;
   }
 }
 .promo__button {
@@ -310,11 +325,6 @@ body.lock {
 @media (max-width: 667px) {
   .promo__slide img {
     height: 150px;
-  }
-}
-@media (max-width: 450px) {
-  .promo__slide img {
-    height: 100px;
   }
 }
 
