@@ -19,8 +19,8 @@ document.addEventListener('click', e => {
 
 const swiper = new Swiper('.promo__swiper', {
 	loop: true,
-	slidesPerView: 2.2,
-	spaceBetween: 20,
+	slidesPerView: 2.3,
+	spaceBetween: 0,
 	centeredSlides: true,
 	slideToClickedSlide: true,
 	loopedSlides: 5,
